@@ -47,9 +47,8 @@ const Banner = () => {
 
       <div className="width-screen grid grid-cols-4 relative -top-[76px]">
         {listUnderBanner.map((item, index) => (
-          <div className="w-[306px] h-[179px] banner-hover">
+          <div key={index} className="w-[306px] h-[179px] banner-hover">
             <Image
-              key={index}
               src={item}
               height={182}
               width={292}
