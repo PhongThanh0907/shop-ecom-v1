@@ -39,6 +39,32 @@
   width: 190px;
 }
 
+.banner-hover {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.banner-hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -15%;
+  bottom: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ffffff80;
+  transition: none;
+  transform: skewX(-25deg);
+}
+
+.banner-hover:hover::before {
+  width: 130%;
+  background-color: #fff0;
+  transition: all 0.5s ease-out;
+  z-index: 2;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 0%;
