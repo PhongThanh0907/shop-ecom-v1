@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  margin: 0;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .width-screen {
+    @apply max-w-7xl mx-auto;
+  }
+  .flex-center-row {
+    @apply flex justify-center items-center flex-row;
+  }
+  .flex-center-col {
+    @apply flex justify-center items-center flex-col;
+  }
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+
+}
+
+.bg-gradient {
+  background: repeating-linear-gradient(
+    to right,
+    #f1d113 0,
+    #fef273 25%,
+    #f1b01f 50%,
+    #fde904 75%,
+    #e5bf23 100%
+  );
+  animation: gradient 2s linear infinite;
+  background-size: 200% auto;
+  width: 190px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: -200% 0%;
+  }
+}
