@@ -10,7 +10,8 @@ const config: Config = {
     extend: {
       colors: {
         red: "#ff0000",
-        orange: "#ff7e00"
+        orange: "#ff7e00",
+        gradientOrange: "linear-gradient(270deg, #ff5c00 0%, #e21b00 100%)",
       },
     },
   },

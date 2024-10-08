@@ -23,7 +23,7 @@ const Banner = () => {
   ];
 
   return (
-    <div>
+    <div className="relative">
       <Slider {...settings}>
         <Image
           src="https://kccshop.vn/media/banner/xcbxcbxcb.jpg"
@@ -45,18 +45,20 @@ const Banner = () => {
         />
       </Slider>
 
-      <div className="width-screen grid grid-cols-4 relative -top-[76px]">
-        {listUnderBanner.map((item, index) => (
-          <div key={index} className="w-[306px] h-[179px] banner-hover">
-            <Image
-              src={item}
-              height={182}
-              width={292}
-              alt="banner"
-              className="rounded-2xl cursor-pointer w-full h-full"
-            />
-          </div>
-        ))}
+      <div className="absolute -bottom-[95px] inset-x-0">
+        <div className="width-screen grid grid-cols-4">
+          {listUnderBanner.map((item, index) => (
+            <div key={index} className="w-[306px] h-[179px] banner-hover">
+              <Image
+                src={item}
+                height={182}
+                width={292}
+                alt="banner"
+                className="rounded-2xl cursor-pointer w-full h-full"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
