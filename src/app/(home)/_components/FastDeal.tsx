@@ -76,14 +76,24 @@ const FastDeal = () => {
         </div>
         <div className="px-2 pt-4 pb-6">
           <Slider {...settings} ref={slideRef}>
-            <ItemProduct />,
-            <ItemProduct />,
-            <ItemProduct />,
-            <ItemProduct />,
-            <ItemProduct />,
-            <ItemProduct />,
-            <ItemProduct />,
-            <ItemProduct />,
+            <div className="px-1.5">
+              <ItemProduct />,
+            </div>
+            <div className="px-1.5">
+              <ItemProduct />,
+            </div>
+            <div className="px-1.5">
+              <ItemProduct />,
+            </div>
+            <div className="px-1.5">
+              <ItemProduct />,
+            </div>
+            <div className="px-1.5">
+              <ItemProduct />,
+            </div>
+            <div className="px-1.5">
+              <ItemProduct />,
+            </div>
           </Slider>
         </div>
 
