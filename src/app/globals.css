@@ -4,7 +4,9 @@
 
 :root {
   margin: 0;
+  --color-secondary: #1435c3;
   --bg-gradient-deal: linear-gradient(270deg, #ff5c00 0%, #e21b00 100%);
+  --bg-gradient-1: linear-gradient(270deg, #ffb800 0%, #ff7a30 100%);
   --bg-gradient-3: linear-gradient(270deg, #ffd600 0%, #ffb800 100%);
   --bg-gradient-4: repeating-linear-gradient(
     to right,
@@ -77,6 +79,17 @@
   background-size: 200% auto;
   background-position: 0 100%;
   animation: 2s linear infinite forwards gradient-bg-antimation;
+}
+
+.bg-item-promotion {
+  background: white;
+  color: black;
+
+}
+
+.bg-item-promotion:hover {
+  background: var(--bg-gradient-1);
+  color: white;
 }
 
 @keyframes gradient {

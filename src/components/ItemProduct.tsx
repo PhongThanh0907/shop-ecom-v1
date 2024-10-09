@@ -1,10 +1,11 @@
+"use client";
+
 import { Check, PlusCircle, ShoppingBag } from "lucide-react";
 import Image from "next/image";
-import React from "react";
 
 const ItemProduct = () => {
   return (
-    <div className="h-[420px] bg-white rounded-xl overflow-hidden p-4 relative">
+    <div className="h-[420px] bg-white rounded-xl overflow-hidden p-4 relative shadow">
       <div className="flex-center-row relative">
         <Image
           src="https://kccshop.vn/media/product/250-7494-wrwrw.jpg"

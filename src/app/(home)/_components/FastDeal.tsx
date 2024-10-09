@@ -1,13 +1,11 @@
 "use client";
 
 import { ChevronLeft, ChevronRight, Zap } from "lucide-react";
-import React, { useRef } from "react";
-import Image from "next/image";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import Slider from "react-slick";
 import ItemProduct from "@/components/ItemProduct";
+import { useRef } from "react";
 
 const FastDeal = () => {
   const slideRef = useRef<Slider>(null);
@@ -49,19 +47,8 @@ const FastDeal = () => {
     prevArrow: <PrevArrow />,
   };
 
-  const data = [
-    <ItemProduct />,
-    <ItemProduct />,
-    <ItemProduct />,
-    <ItemProduct />,
-    <ItemProduct />,
-    <ItemProduct />,
-    <ItemProduct />,
-    <ItemProduct />,
-  ];
-
   return (
-    <div className="width-screen mt-28">
+    <div className="width-screen pt-24">
       <div
         style={{
           background: "var(--bg-gradient-deal)",
@@ -89,11 +76,14 @@ const FastDeal = () => {
         </div>
         <div className="px-2 pt-4 pb-6">
           <Slider {...settings} ref={slideRef}>
-            {data.map((item, index) => (
-              <div className="px-1.5" key={index}>
-                {item}
-              </div>
-            ))}
+            <ItemProduct />,
+            <ItemProduct />,
+            <ItemProduct />,
+            <ItemProduct />,
+            <ItemProduct />,
+            <ItemProduct />,
+            <ItemProduct />,
+            <ItemProduct />,
           </Slider>
         </div>
 
