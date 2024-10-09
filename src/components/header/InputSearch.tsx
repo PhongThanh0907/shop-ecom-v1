@@ -5,7 +5,6 @@ import React, { useState } from "react";
 
 const InputSearch = () => {
   const [value, setValue] = useState("");
-  console.log(value);
 
   return (
     <div className="flex-1 relative">

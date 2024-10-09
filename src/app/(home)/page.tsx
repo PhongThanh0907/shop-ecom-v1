@@ -8,6 +8,7 @@ import ListProduct from "./_components/ListProduct";
 import Feedback from "./_components/Feedback";
 import News from "./_components/News";
 import Policy from "./_components/Policy";
+import CusRes from "./_components/CusRes";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
       <Feedback />
       <News />
       <Policy />
+      <CusRes />
     </main>
   );
 }
