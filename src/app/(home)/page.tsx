@@ -6,6 +6,8 @@ import FastDeal from "./_components/FastDeal";
 import Promotion from "./_components/Promotion";
 import ListProduct from "./_components/ListProduct";
 import Feedback from "./_components/Feedback";
+import News from "./_components/News";
+import Policy from "./_components/Policy";
 
 export default function Home() {
   return (
@@ -27,6 +29,8 @@ export default function Home() {
       </div>
 
       <Feedback />
+      <News />
+      <Policy />
     </main>
   );
 }
