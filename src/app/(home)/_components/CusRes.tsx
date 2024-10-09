@@ -5,6 +5,7 @@ import React, { useState } from "react";
 
 const CusRes = () => {
   const [value, setValue] = useState("");
+  console.log(value);
 
   return (
     <div className="bg-orange py-5">
