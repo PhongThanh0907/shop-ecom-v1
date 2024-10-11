@@ -100,7 +100,7 @@ const HeaderMenu = () => {
           </div>
         ))}
         <div
-          className={`group-hover:opacity-100 opacity-0 absolute inset-x-0 top-[74px] shadow-lg border duration-300 rounded-xl p-4 z-20 bg-white`}
+          className={`group-hover:opacity-100 opacity-0 absolute inset-x-0 top-[74px] shadow-lg border duration-300 rounded-xl p-4 z-[-1] group-hover:z-20 bg-white`}
         >
           <div className="flex justify-between">
             <div className="flex-1 px-6 py-2">
