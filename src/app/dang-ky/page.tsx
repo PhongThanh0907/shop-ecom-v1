@@ -1,8 +1,8 @@
 import React from "react";
-import FormLogin from "./_components/FormLogin";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import FormRegister from "./_components/FormRegister";
 
-const LoginPage = () => {
+const RegisterPage = () => {
   return (
     <main className="space-y-4 bg-[#f8f8fc]">
       <div className="width-screen pt-4">
@@ -13,16 +13,16 @@ const LoginPage = () => {
               link: "/",
             },
             {
-              title: "Đăng nhập tài khoản",
+              title: "Đăng ký tài khoản thành viên",
               link: "/",
             },
           ]}
         />
       </div>
 
-      <FormLogin />
+      <FormRegister />
     </main>
   );
 };
 
-export default LoginPage;
+export default RegisterPage;

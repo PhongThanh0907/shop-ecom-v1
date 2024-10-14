@@ -17,6 +17,8 @@ const schema = yup
   })
   .required();
 
+type LoginForm = yup.InferType<typeof schema>;
+
 const FormLogin = () => {
   const {
     register,
@@ -26,8 +28,7 @@ const FormLogin = () => {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = (data: { email: string; password: string }) =>
-    console.log(data);
+  const onSubmit = (data: LoginForm) => console.log(data);
 
   return (
     <div className="bg-white py-6">
